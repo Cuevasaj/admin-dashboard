@@ -10,26 +10,76 @@
     <div class="container">
       <aside class="sidebar">
         <div class="logo">
-          <img src="#" alt="" />
+          <img class="logo-svg" src="./icons/square-opacity.svg" alt="" />
           <h2>Dashboard</h2>
         </div>
 
-        <nav>
+        <nav class="nav-list">
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">Messages</a></li>
-            <li><a href="#">History</a></li>
-            <li><a href="#">Tasks</a></li>
-            <li><a href="#">Communities</a></li>
+            <li class="nav-list-item">
+              <a href="#">
+                <img src="icons/home.svg" alt="home" />
+                <span>Home</span>
+              </a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#">
+                <img src="icons/card-account-details-outline.svg" alt="" />
+                <span>Profile</span>
+              </a>
+            </li>
+
+            <li class="nav-list-item">
+              <a href="#">
+                <img src="icons/message-reply-outline.svg" alt="" />
+                <span> Messages</span>
+              </a>
+            </li>
+
+            <li class="nav-list-item">
+              <a href="#">
+                <img src="icons/clock-time-four-outline.svg" alt="" />
+                <span>History</span>
+              </a>
+            </li>
+
+            <li class="nav-list-item">
+              <a href="#">
+                <img src="icons/note-multiple-outline.svg" alt="" />
+                <span>Tasks</span>
+              </a>
+            </li>
+
+            <li class="nav-list-item">
+              <a href="#">
+                <img src="icons/account-group-outline.svg" alt="" />
+                <span>Communities</span>
+              </a>
+            </li>
           </ul>
         </nav>
 
-        <nav>
+        <nav class="nav-list">
           <ul>
-            <li><a href="#">Settings</a></li>
-            <li><a href="#">Support</a></li>
-            <li><a href="#">Privacy</a></li>
+            <li class="nav-list-item">
+              <a href="#">
+                <img src="icons/cog-outline.svg" alt="" />
+                <span>Settings</span>
+              </a>
+            </li>
+
+            <li class="nav-list-item">
+              <a href="#">
+                <img src="icons/help-box-outline.svg" alt="" />
+                <span>Support</span>
+              </a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#">
+                <img src="icons/shield-check-outline.svg" alt="" />
+                <span>Privacy</span>
+              </a>
+            </li>
           </ul>
         </nav>
       </aside>
@@ -37,13 +87,28 @@
       <header class="header">
         <div class="header-top">
           <div class="search">
-            <label for="site-search"><img src="#" alt="img" /></label>
-            <input type="search" id="site-search" placeholder="Search..." />
+            <label for="site-search"
+              ><img class="search-icon" src="icons/magnify.svg" alt="img"
+            /></label>
+            <input
+              class="search-bar"
+              type="search"
+              id="site-search"
+              placeholder="Search..."
+            />
           </div>
           <div class="user-info">
-            <img src="" alt="bell" />
+            <img
+              class="user-bell-icon"
+              src="icons/bell-ring-outline.svg"
+              alt="bell"
+            />
             <div class="user-profile">
-              <img src="" alt="img" />
+              <img
+                class="profile-icon"
+                src="icons/avataaars-1776141115544.svg"
+                alt="img"
+              />
               <span class="username">Alexis Cuevas</span>
             </div>
           </div>
@@ -51,7 +116,7 @@
 
         <div class="header-bottom">
           <div class="user-greeting">
-            <img src="" alt="" />
+            <img src="icons/avataaars-1776141115544.svg" alt="" />
             <div class="greeting-texts">
               <span>Hi there,</span>
               <p><strong>Alexis (@alexisjcuevas)</strong></p>
