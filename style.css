@@ -127,21 +127,6 @@ nav {
   text-align: center;
 }
 
-.main-content {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  background-color: lightblue;
-}
-
-.cards-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-}
-.card {
-  min-height: 200px;
-}
-
 .sidebar nav:last-child {
   margin-top: top;
 }
@@ -152,27 +137,53 @@ nav {
   display: flex;
   flex-direction: column;
   padding-top: 20px;
-  padding-bottom: 20px;
   padding-left: 30px;
+  box-shadow: 0px 4px 6px 0px #0000004d;
+  background-color: white;
+  position: relative;
+  z-index: 1;
+  font-weight: 900;
 }
 
 .header-top {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
   flex-direction: row;
 }
 
+.search {
+  display: flex;
+  flex-direction: row;
+  margin-left: 30px;
+}
+.search-icon {
+  height: 30px;
+}
+
+.search-bar {
+  width: 900px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: #e2e8f0;
+  margin-left: 20px;
+  outline: none;
+  border: none;
+}
 .user-info {
   display: flex;
-  gap: 15px;
+  align-items: center;
+  gap: 30px;
+  margin-right: 50px;
 }
 .user-profile {
   display: flex;
   gap: 15px;
   align-items: center;
 }
+
 .user-bell-icon {
-  height: 35px;
+  height: 30px;
 }
 .profile-icon {
   height: 45px;
@@ -182,23 +193,85 @@ nav {
   display: flex;
 }
 
+.profile-icon-greeting {
+  height: 80px;
+  margin: 20px;
+}
+.greeting-texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .header-bottom {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  width: auto;
 }
 
-.search {
-  display: flex;
-  flex-direction: row;
-}
-.search-icon {
-  height: 25px;
-}
-
-.search-bar {
-  width: 700px;
-  height: 30px;
+.header-bottom button {
+  color: white;
+  background-color: #1992d4;
   border-radius: 20px;
+  padding: 8px 24px;
+  min-width: 90px;
+  border: none;
+  cursor: pointer;
+  font-size: larger;
 }
+
+.header-buttons {
+  display: flex;
+  gap: 50px;
+  margin-right: 50px;
+}
+
+/* end of header */
+/* Main content */
+.main-content {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  padding-top: 40px;
+  background-color: #e2e8f0;
+}
+
+.title-project {
+  margin-left: 16px;
+}
+.cards-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+.card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 2px 2px 5px #0000001a;
+  border-left: 5px solid #f0b429;
+  min-height: 200px;
+}
+
 /* elements */
+
+.interactive-buttons button {
+  border: 0;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.favorite-icon {
+  height: 20px;
+}
+.view-icon {
+  height: 20px;
+}
+
+.fork-icon {
+  height: 20px;
+}
