@@ -128,7 +128,7 @@ nav {
 }
 
 .sidebar nav:last-child {
-  margin-top: top;
+  margin-top: 40px;
 }
 
 /*  header */
@@ -240,6 +240,7 @@ nav {
 
 .title-project {
   margin-left: 16px;
+  margin-bottom: 8px;
 }
 .cards-grid {
   display: grid;
@@ -249,16 +250,23 @@ nav {
   margin-right: 16px;
 }
 .card {
+  display: flex;
+  flex-direction: column;
   background-color: white;
   border-radius: 8px;
   padding: 20px;
   box-shadow: 2px 2px 5px #0000001a;
-  border-left: 5px solid #f0b429;
+  border-left: 8px solid #f0b429;
   min-height: 200px;
 }
 
 /* elements */
-
+.interactive-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: auto;
+}
 .interactive-buttons button {
   border: 0;
   outline: none;
@@ -274,4 +282,61 @@ nav {
 
 .fork-icon {
   height: 20px;
+}
+
+/* main content aside  */
+
+.announcements {
+  margin-right: 26px;
+}
+.announcements-container {
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: white;
+  padding: 10px 0;
+  margin-top: 10px;
+}
+
+.announcement-card {
+  background-color: white;
+  padding: 20px;
+  border-bottom: rgb(201, 196, 196) solid 1px;
+  margin: 0 15px;
+}
+
+.announcement-card:last-child {
+  border-bottom: none;
+}
+.title-main-aside {
+  margin-bottom: 8px;
+}
+
+/* trending section */
+.trending {
+  margin-right: 26px;
+}
+.title-main-aside-two {
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.trending-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: white;
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 10px;
+  padding-bottom: 20px;
+}
+
+.trending-user-card {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.trending-user-card:last-child {
+  margin-bottom: 0;
 }
